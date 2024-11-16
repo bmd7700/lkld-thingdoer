@@ -3,11 +3,17 @@ title.innerText = "Lakeland Thing-Doer";
 
 const container = document.querySelector("#container");
 
+const pageHeader = document.createElement("h1");
+pageHeader.classList.add("pageHeader");
+pageHeader.textContent = "Welcome to the Lakeland Thing-Doer."
+
 const content = document.createElement("div");
 content.classList.add("content");
-content.textContent = "Welcome to the Lakeland Thing Doer.";
+content.textContent = "Here, we help you decide what to do in Lakeland.";
 
+container.appendChild(pageHeader);
 container.appendChild(content);
+
 
 
 /**const container = document.querySelector("#container");
