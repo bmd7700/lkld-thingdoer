@@ -17,10 +17,22 @@
     color: white;
 }
 
-.buttons {
+.buttonContainer {
     display: flex;
-    border-radius: 10px;
     padding: 10px;
     justify-content: space-around;
     font-size: medium;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #af6c9e;
+}
+
+button {
+    border-radius: 10px;
+    background-color: #af6c7d;
+    color: white;
 }
