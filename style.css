@@ -1,0 +1,26 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pageHeader {
+    display: flex;
+    justify-content: space-around;
+    background-color: #7D6CAF;
+    color: #af9e6c;
+    padding: 10px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    background-color: #af6c9e;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    border-radius: 10px;
+    padding: 10px;
+    justify-content: space-around;
+    font-size: medium;
+}
