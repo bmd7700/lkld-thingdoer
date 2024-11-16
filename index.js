@@ -1,6 +1,13 @@
 const title = document.getElementById("title");
 title.innerText = "Lakeland Thing-Doer";
 
+let placeholder = ""; 
+
+const foods = ['Il Forno', 'Taco Bell', 'Jet\'s Pizza', 'Mellow Mushroom', 'Thai Oishi', 'Palace', 'Black and Brew', 'Cob and Pen', ''];
+const parks = [];
+const activities = [];
+const shopping = [];
+
 const banner = document.querySelector("#banner");
 const container = document.querySelector("#container");
 
@@ -44,36 +51,12 @@ shoppingButton.classList.add("buttons");
 shoppingButton.setAttribute("id", "shoppingButton");
 shoppingButton.textContent = "SHOPPING";
 
+const resultContent = document.createElement("p");
+resultContent.classList.add('content');
+resultContent.innerText = placeholder;
 //each category contains an array of endpoints. For now, just strings. Phase II: make it return objects with phone, address, etc etc. 
 
-// when each button is clicked, a new div should populate with the selected item
-const resultDiv = document.createElement("div");
-resultDiv.classList.add("content");
 
-let placeholder = ""; // this to be populated with result frm selectList
-
-const buttons = document.querySelectorAll("button");
-buttons.forEach((button) => {
-    button.addEventListener("click", ()=>{
-        let selection = button.id;
-        selectList(selection);
-    })
-})
-
-function selectList(selection){
-    // selection is button id. Button id indicates user choice.
-    // since limited number of options, build switch for each case.
-    // when case selected: call random number function with length of array (build arrays)
-    // let i = random number function with length of array
-    // placeholder = array[i]
-    //return placeholder;
-   }
-
-const resultContent = document.createElement("p");
-resultContent.innerText = placeholder;
-
-
-resultDiv.appendChild(resultContent);
 
 banner.appendChild(pageHeader);
 buttonContainer.appendChild(randomButton);
@@ -83,9 +66,39 @@ buttonContainer.appendChild(activitiesButton);
 buttonContainer.appendChild(shoppingButton);
 container.appendChild(content);
 container.appendChild(buttonContainer);
-container.appendChild(resultDiv);
+container.appendChild(resultContent);
+
+
+const buttons = document.querySelectorAll("button");
+buttons.forEach((button) => {
+    button.addEventListener("click", ()=>{
+        let selection = button.id;
+        placeholder = selectList(selection);
+        resultContent.innerText = placeholder.toString();
+    })
+})
+
+function selectList(selection){
+    switch (selection){
+        case 'foodButton':
+            let length = foods.length;
+            let choice = randomNumber((length));
+            let result = foods[choice];
+            return result;
+            break;
+    }}
+
+function randomNumber(limit){
+    return Math.floor((Math.random() * limit));
+}
+
+
+
+
+
 
 /**
+ * 
  * e references the event and unlocks a number of properties and methods we can use to parse the event
 const callback = document.querySelector("#callback");
 callback.addEventListener("click", function(e){
