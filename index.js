@@ -3,10 +3,15 @@ title.innerText = "Lakeland Thing-Doer";
 
 let placeholder = ""; 
 
-const foods = ['Il Forno', 'Taco Bell', 'Jet\'s Pizza', 'Mellow Mushroom', 'Thai Oishi', 'Palace', 'Black and Brew', 'Cob and Pen', ''];
-const parks = [];
-const activities = [];
-const shopping = [];
+// Phase II: add bars and beer halls, segregate food by category, combine parks and activities into one category
+//each category contains an array of endpoints. For now, just strings. Phase II: make it return objects with phone, address, etc etc. 
+
+const foods = ['Il Forno', 'Taco Bell', 'Jet\'s Pizza', 'Mellow Mushroom', 'Thai Oishi', 'Palace', 'Black and Brew', 
+    'Cob and Pen', 'Curry Mango', 'Culver\'s', 'Cafe Zuppina', 'Bedrock', 'The Joinery', 'Harry\'s', '1961'];
+const parks = ['Bonnet Springs', 'Lake Parker Park', 'Lakeland Highlands Scrub', 'Barnett Park', 'Munn Park', 'Lake Mirror', 'Lake Morton', 'Circle Bar B'];
+const activities = ['Picassoz Cup', 'Painting with a Twist', 'Escape Room', 'Axe Throwing', 'Gun Range', 'Gym'];
+const shopping = ['Lakeside Village', 'Pressed', 'Books a Million', 'Target', 'Lakeland Square Mall', 'Goodwill', 'Lighthouse Ministries', 
+    'Brandon Mall', 'Tampa International Plaza'];
 
 const banner = document.querySelector("#banner");
 const container = document.querySelector("#container");
@@ -54,9 +59,6 @@ shoppingButton.textContent = "SHOPPING";
 const resultContent = document.createElement("p");
 resultContent.classList.add('content');
 resultContent.innerText = placeholder;
-//each category contains an array of endpoints. For now, just strings. Phase II: make it return objects with phone, address, etc etc. 
-
-
 
 banner.appendChild(pageHeader);
 buttonContainer.appendChild(randomButton);
@@ -73,20 +75,41 @@ const buttons = document.querySelectorAll("button");
 buttons.forEach((button) => {
     button.addEventListener("click", ()=>{
         let selection = button.id;
+        console.log('Selection: ' + selection);
         placeholder = selectList(selection);
+        console.log('Placeholder: ' + placeholder);
         resultContent.innerText = placeholder.toString();
     })
 })
 
 function selectList(selection){
+    let length;
+    let choice;
+    let result = '';
     switch (selection){
         case 'foodButton':
-            let length = foods.length;
-            let choice = randomNumber((length));
-            let result = foods[choice];
-            return result;
+            length = foods.length;
+            choice = randomNumber(length);
+            result = foods[choice];
             break;
-    }}
+        case 'parksButton':
+            length = parks.length;
+            choice = randomNumber(length);
+            result = parks[choice];
+            break;
+        case 'activitiesButton':
+            length = activities.length;
+            choice = randomNumber(length);
+            result = activities[choice];
+            break;
+        case 'shoppingButton':
+            length = shopping.length;
+            choice = randomNumber(length);
+            result = shopping[choice];
+            break;
+    }
+    return result;
+}
 
 function randomNumber(limit){
     return Math.floor((Math.random() * limit));
