@@ -50,25 +50,24 @@ shoppingButton.textContent = "SHOPPING";
 const resultDiv = document.createElement("div");
 resultDiv.classList.add("content");
 
-let placeholder = "";
+let placeholder = ""; // this to be populated with result frm selectList
 
 const buttons = document.querySelectorAll("button");
 buttons.forEach((button) => {
     button.addEventListener("click", ()=>{
         let selection = button.id;
-
+        selectList(selection);
     })
 })
 
 function selectList(selection){
-    if(selection === "randomButton"){
-
-    } else {
-        
-    }
-    //pull random number from random function (create function)
-    //assign number to index in array named after button id
-}
+    // selection is button id. Button id indicates user choice.
+    // since limited number of options, build switch for each case.
+    // when case selected: call random number function with length of array (build arrays)
+    // let i = random number function with length of array
+    // placeholder = array[i]
+    //return placeholder;
+   }
 
 const resultContent = document.createElement("p");
 resultContent.innerText = placeholder;
