@@ -24,13 +24,9 @@ const content = document.createElement("div");
 content.classList.add("content");
 content.textContent = "Helping YOU decide what to do in Lakeland!";
 
-//buttons: random experience, food, parks, activities, shopping
-//
-
 const buttonContainer = document.createElement("div");
 buttonContainer.classList.add("buttons");
 
-//each button on click should select a random event from the appropriate category
 const randomButton = document.createElement("button");
 randomButton.classList.add("buttons");
 randomButton.setAttribute("id", "randomButton");
@@ -87,6 +83,8 @@ function selectList(selection){
     let choice;
     let result = '';
     switch (selection){
+        // random button logic:
+        //
         case 'foodButton':
             length = foods.length;
             choice = randomNumber(length);
