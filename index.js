@@ -3,9 +3,6 @@ title.innerText = "Lakeland Thing-Doer";
 
 let placeholder = ""; 
 
-// Phase II: add bars and beer halls, segregate food by category, combine parks and activities into one category
-//each category contains an array of endpoints. For now, just strings. Phase II: make it return objects with phone, address, etc etc. 
-
 const foods = ['Il Forno', 'Taco Bell', 'Jet\'s Pizza', 'Mellow Mushroom', 'Thai Oishi', 'Palace', 'Black and Brew', 
     'Cob and Pen', 'Curry Mango', 'Culver\'s', 'Cafe Zuppina', 'Bedrock', 'The Joinery', 'Harry\'s', '1961', 'LoveBird', 'Chick-Fil-A'];
 const parks = ['Bonnet Springs', 'Lake Parker Park', 'Lakeland Highlands Scrub', 'Barnett Park', 'Munn Park', 'Lake Mirror', 'Lake Morton', 'Circle Bar B'];
@@ -15,10 +12,6 @@ const shopping = ['Antique Mall', 'Lakeside Village', 'Pressed', 'Books a Millio
 const arrayOfThings = [foods, parks, activities, shopping];
 
 const container = document.querySelector("#container");
-
-// const content = document.createElement("div");
-// content.classList.add("content");
-// content.textContent = "Helping YOU decide what to do in Lakeland!";
 
 const buttonContainer = document.createElement("div");
 buttonContainer.classList.add("buttons");
@@ -57,7 +50,6 @@ buttonContainer.appendChild(foodButton);
 buttonContainer.appendChild(parksButton);
 buttonContainer.appendChild(activitiesButton);
 buttonContainer.appendChild(shoppingButton);
-//container.appendChild(content);
 container.appendChild(buttonContainer);
 container.appendChild(resultContent);
 

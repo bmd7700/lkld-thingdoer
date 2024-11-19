@@ -11,3 +11,6 @@ It is a simple page with a banner bar and five buttons.
 On click, each button should alert the user to the winning selection.
 
 Eventually, we can have the buttons open a page with detailed information about each option.
+
+Phase II: add bars and beer halls, segregate food by category, combine parks and activities into one category
+each category contains an array of endpoints. For now, just strings. Phase II: make it return objects with phone, address, etc etc.
