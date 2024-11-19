@@ -3,7 +3,7 @@ The Lakeland Thing-Doer is a page designed to help people find an activity to do
 It is a simple page with a banner bar and five buttons.
 
 1: Random Experience. Selects a random experience from a random category.
-2: Food.
+2: Food. - break out into breakfast, lunch, dinner
 3: Parks.
 4: Activities.
 5: Shopping.
