@@ -22,9 +22,9 @@ const pageHeader = document.createElement("h1");
 pageHeader.classList.add("pageHeader");
 pageHeader.textContent = "Welcome to the Lakeland Thing-Doer"
 
-const content = document.createElement("div");
-content.classList.add("content");
-content.textContent = "Helping YOU decide what to do in Lakeland!";
+// const content = document.createElement("div");
+// content.classList.add("content");
+// content.textContent = "Helping YOU decide what to do in Lakeland!";
 
 const buttonContainer = document.createElement("div");
 buttonContainer.classList.add("buttons");
@@ -64,7 +64,7 @@ buttonContainer.appendChild(foodButton);
 buttonContainer.appendChild(parksButton);
 buttonContainer.appendChild(activitiesButton);
 buttonContainer.appendChild(shoppingButton);
-container.appendChild(content);
+//container.appendChild(content);
 container.appendChild(buttonContainer);
 container.appendChild(resultContent);
 

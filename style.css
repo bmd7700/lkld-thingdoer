@@ -5,11 +5,11 @@
 #bannerBar {
     display: flex;
     justify-content: space-around;
-    /*padding: 10px;*/
 }
 
 #banner {
     display: flex;
+    border-radius: 10px;
 }
 
 #container {
@@ -23,21 +23,22 @@
 #main {
     display: flex;
     justify-content: space-around;
-    background-color: aliceblue;
+    background-color: #bde0ae;
+    flex-direction: column;
 }
 
 .pageHeader {
     display: flex;
     justify-content: space-around;
-    background-color: #7D6CAF;
-    color: #af9e6c;
+    background-color: #d1aee0;
+    color: white;
     padding: 10px;
 }
 
 .content {
     display: flex;
     justify-content: space-around;
-    background-color: #af6c9e;
+    background-color: #d1aee0;
     color: white;
     padding: 10px;
     margin: 10px;
@@ -54,12 +55,13 @@
     display: flex;
     justify-content: space-around;
     padding: 10px;
-    background-color: #af6c9e;
+    margin: 10px;
+    background-color: #e0b8ae;
 }
 
 button {
     border-radius: 10px;
-    background-color: #af6c7d;
+    background-color: #e0b8ae;
     color: white;
     padding: 10px;
 }
