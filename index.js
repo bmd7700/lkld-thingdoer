@@ -4,16 +4,18 @@ title.innerText = "Lakeland Thing-Doer";
 let placeholder = ""; 
 
 const foods = ['Il Forno', 'Taco Bell', 'Jet\'s Pizza', 'Mellow Mushroom', 'Thai Oishi', 'Palace', 'Black and Brew', 
-    'Cob and Pen', 'Curry Mango', 'Culver\'s', 'Cafe Zuppina', 'Bedrock', 'The Joinery', 'Harry\'s', '1961', 'LoveBird', 'Chick-Fil-A', 'Ford\'s Garage', 'Olive Garden', 
-    'Walk Ons', 'Michi Ramen', 'Oksumi Ramen', 'Frescos', 'Miller\'s Ale House', 'Smiths American Tavern', 'Mojo Federal', 'Texas Cattle Co.', 'Peach House', 
-    'Mr. Fish', 'Scarpa\'s', 'Beef O\' Brady\'s', 'K-Pot Korean BBQ'];
-const parks = ['Bonnet Springs', 'Lake Parker Park', 'Lakeland Highlands Scrub', 'Barnett Park', 'Munn Park', 'Lake Mirror', 'Lake Morton', 'Circle Bar B', 'Common Ground Park',
-    'Peterson Park', 'Lake Crago', 'Colt Creek State Park', 'Gator Creek Reserve'];
+    'Cob and Pen', 'Curry Mango', 'Culver\'s', 'Cafe Zuppina', 'Bedrock', 'The Joinery', 'Harry\'s', '1961', 'LoveBird', 'Chick-Fil-A', 'Ford\'s Garage', 
+    'Olive Garden', 'Walk Ons', 'Michi Ramen', 'Oksumi Ramen', 'Frescos', 'Miller\'s Ale House', 'Smiths American Tavern', 'Mojo Federal', 'Texas Cattle Co.', 
+    'Peach House', 'Mr. Fish', 'Scarpa\'s', 'Beef O\' Brady\'s', 'K-Pot Korean BBQ'];
+const parks = ['Bonnet Springs', 'Lake Parker Park', 'Lakeland Highlands Scrub', 'Barnett Park', 'Munn Park', 'Lake Mirror', 'Lake Morton', 'Circle Bar B', 
+    'Common Ground Park', 'Peterson Park', 'Lake Crago', 'Colt Creek State Park', 'Gator Creek Reserve'];
 const activities = ['Wander around downtown', 'Wander around Dixieland', 'Walk around Hollingsworth', 'Kitty Kat Lounge', 'Urban Air', 'SkyZone', 'Picassoz Cup', 
     'Painting with a Twist', 'Escape Room', 'Ax-Caliber', 'Shoot Straight Gun Range', 'Planet Fitness', 'Tienda Studio', 'Melting Spot'];
-const shopping = ['Antique Mall', 'Lakeside Village', 'Pressed', 'Books a Million', 'Target', 'Lakeland Square Mall', 'Goodwill', 'Lighthouse Ministries', 
-    'Brandon Mall', 'Tampa International Plaza', 'Scout and Tag', 'Inklings', 'Hobby Lobby', 'Michaels', 'Old Navy'];
+const shopping = ['Amelia Page Boutique', 'Antique Mall', 'Lakeside Village', 'Pressed', 'Books a Million', 'Target', 'Lakeland Square Mall', 'Goodwill', 
+    'Lighthouse Ministries', 'Brandon Mall', 'Tampa International Plaza', 'Scout and Tag', 'Inklings', 'Hobby Lobby', 'Michaels', 'Old Navy'];
 // add array of coffee shops
+const coffeeShops = ['Black and Brew', 'Mittchell\'s Coffee House', 'Hillcrest Coffee', 'Concord Coffee', 'Pour Bear Coffee', 'Andrew\'s Coffee', 
+    'Amonie Jo\'s', 'Pressed LKLD', 'Divicious', 'Milkster'];
 // add array of bars
 //add these arrays to arrayOfThings
 const arrayOfThings = [foods, parks, activities, shopping];
