@@ -14,8 +14,6 @@ Each button causes the page to randomly select an activity from the appropriate 
 
 1. Expand the selection of arrays.
    a. Break 'Foods' out into breakfast, brunch, lunch, and dinner.
-   b. Add a category for bars.
-   c. Add a category for coffee shops.
 
 2. Aesthetic improvements.
    a. Make a better header. Site title in the top-center, banner bar below.
