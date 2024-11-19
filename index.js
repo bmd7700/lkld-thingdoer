@@ -14,13 +14,7 @@ const shopping = ['Lakeside Village', 'Pressed', 'Books a Million', 'Target', 'L
     'Brandon Mall', 'Tampa International Plaza', 'Scout and Tag', 'Inklings', ];
 const arrayOfThings = [foods, parks, activities, shopping];
 
-
-const banner = document.querySelector("#banner");
 const container = document.querySelector("#container");
-
-const pageHeader = document.createElement("h1");
-pageHeader.classList.add("pageHeader");
-pageHeader.textContent = "Welcome to the Lakeland Thing-Doer"
 
 // const content = document.createElement("div");
 // content.classList.add("content");
@@ -58,7 +52,6 @@ const resultContent = document.createElement("p");
 resultContent.classList.add('content');
 resultContent.innerText = placeholder;
 
-banner.appendChild(pageHeader);
 buttonContainer.appendChild(randomButton);
 buttonContainer.appendChild(foodButton);
 buttonContainer.appendChild(parksButton);
