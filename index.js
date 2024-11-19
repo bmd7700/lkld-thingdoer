@@ -11,7 +11,7 @@ const foods = ['Il Forno', 'Taco Bell', 'Jet\'s Pizza', 'Mellow Mushroom', 'Thai
 const parks = ['Bonnet Springs', 'Lake Parker Park', 'Lakeland Highlands Scrub', 'Barnett Park', 'Munn Park', 'Lake Mirror', 'Lake Morton', 'Circle Bar B'];
 const activities = ['Picassoz Cup', 'Painting with a Twist', 'Escape Room', 'Axe Throwing', 'Gun Range', 'Gym'];
 const shopping = ['Lakeside Village', 'Pressed', 'Books a Million', 'Target', 'Lakeland Square Mall', 'Goodwill', 'Lighthouse Ministries', 
-    'Brandon Mall', 'Tampa International Plaza'];
+    'Brandon Mall', 'Tampa International Plaza', 'Scout and Tag', 'Inklings', ];
 const arrayOfThings = [foods, parks, activities, shopping];
 
 
