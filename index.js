@@ -12,6 +12,8 @@ const parks = ['Bonnet Springs', 'Lake Parker Park', 'Lakeland Highlands Scrub',
 const activities = ['Picassoz Cup', 'Painting with a Twist', 'Escape Room', 'Axe Throwing', 'Gun Range', 'Gym'];
 const shopping = ['Lakeside Village', 'Pressed', 'Books a Million', 'Target', 'Lakeland Square Mall', 'Goodwill', 'Lighthouse Ministries', 
     'Brandon Mall', 'Tampa International Plaza'];
+const arrayOfThings = [foods, parks, activities, shopping];
+
 
 const banner = document.querySelector("#banner");
 const container = document.querySelector("#container");
@@ -83,8 +85,15 @@ function selectList(selection){
     let choice;
     let result = '';
     switch (selection){
-        // random button logic:
-        //
+        case 'randomButton':
+            let randomArray = arrayOfThings[randomNumber(arrayOfThings.length)];
+            console.log('Random array: ' + randomArray);
+            let arrayLength = randomArray.length;
+            console.log("array length: " + arrayLength);
+            length = randomArray.length;
+            choice = randomNumber(length);
+            result = randomArray[choice];
+            break;
         case 'foodButton':
             length = foods.length;
             choice = randomNumber(length);
