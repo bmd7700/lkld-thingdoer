@@ -54,14 +54,14 @@ shoppingButton.setAttribute("id", "shoppingButton");
 shoppingButton.textContent = "SHOPPING";
 
 const coffeeButton = document.createElement("button");
-shoppingButton.classList.add("buttons");
-shoppingButton.setAttribute("id", "coffeeButton");
-shoppingButton.textContent = "COFFEE";
+coffeeButton.classList.add("buttons");
+coffeeButton.setAttribute("id", "coffeeButton");
+coffeeButton.textContent = "COFFEE";
 
 const barButton = document.createElement("button");
-shoppingButton.classList.add("buttons");
-shoppingButton.setAttribute("id", "barButton");
-shoppingButton.textContent = "BARS";
+barButton.classList.add("buttons");
+barButton.setAttribute("id", "barButton");
+barButton.textContent = "BARS";
 
 const resultContent = document.createElement("p");
 resultContent.classList.add('content');
