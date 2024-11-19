@@ -7,6 +7,10 @@
     justify-content: space-around;
 }
 
+#welcome {
+    display: flex;
+}
+
 #container {
     display: flex;
     flex-direction: column;
@@ -18,23 +22,12 @@
 #main {
     display: flex;
     justify-content: space-around;
-    background-color: #bde0ae;
     flex-direction: column;
-}
-
-.pageHeader {
-    display: flex;
-    justify-content: space-around;
-    background-color: #d1aee0;
-    color: white;
-    padding: 10px;
 }
 
 .content {
     display: flex;
     justify-content: space-around;
-    background-color: #d1aee0;
-    color: white;
     padding: 10px;
     margin: 10px;
 }
@@ -51,12 +44,10 @@
     justify-content: space-around;
     padding: 10px;
     margin: 10px;
-    background-color: #e0b8ae;
 }
 
 button {
     border-radius: 10px;
-    background-color: #e0b8ae;
-    color: white;
+    background-color: #bde0ae;
     padding: 10px;
 }
