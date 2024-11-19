@@ -11,6 +11,7 @@ const shopping = ['Antique Mall', 'Lakeside Village', 'Pressed', 'Books a Millio
     'Brandon Mall', 'Tampa International Plaza', 'Scout and Tag', 'Inklings', ];
 // add array of coffee shops
 // add array of bars
+//add these arrays to arrayOfThings
 const arrayOfThings = [foods, parks, activities, shopping];
 
 const container = document.querySelector("#container");
@@ -18,6 +19,7 @@ const container = document.querySelector("#container");
 const buttonContainer = document.createElement("div");
 buttonContainer.classList.add("buttons");
 
+// create buttons for new arrays
 const randomButton = document.createElement("button");
 randomButton.classList.add("buttons");
 randomButton.setAttribute("id", "randomButton");
@@ -52,6 +54,7 @@ buttonContainer.appendChild(foodButton);
 buttonContainer.appendChild(parksButton);
 buttonContainer.appendChild(activitiesButton);
 buttonContainer.appendChild(shoppingButton);
+//append new buttons
 container.appendChild(buttonContainer);
 container.appendChild(resultContent);
 
