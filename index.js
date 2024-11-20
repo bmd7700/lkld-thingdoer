@@ -12,15 +12,13 @@ const activities = ['Bonnet Springs', 'Lake Parker Park', 'Lakeland Highlands Sc
     'Painting with a Twist', 'Escape Room', 'Ax-Caliber', 'Shoot Straight Gun Range', 'Planet Fitness', 'Tienda Studio', 'Melting Spot'];
 const shopping = ['Amelia Page Boutique', 'Antique Mall', 'Lakeside Village', 'Pressed', 'Books a Million', 'Target', 'Lakeland Square Mall', 'Goodwill', 
     'Lighthouse Ministries', 'Brandon Mall', 'Tampa International Plaza', 'Scout and Tag', 'Inklings', 'Hobby Lobby', 'Michaels', 'Old Navy'];
-// add array of coffee shops
 const coffeeShops = ['Black and Brew', 'Mittchell\'s Coffee House', 'Hillcrest Coffee', 'Concord Coffee', 'Pour Bear Coffee', 'Andrew\'s Coffee', 
     'Amonie Jo\'s', 'Pressed LKLD', 'Divicious', 'Milkster'];
-// add array of bars
 const bars = ['Cob and Pen', 'Swan Brewing', 'The Joinery', 'Molly McHugh\'s', 'Dissent Brewing Co.', 'Revival', 'Vasco61', 'Lakeland Loft', 'Linksters', 
     'Ovation', 'Federal Bar', 'Smith\'s American Tavern', 'Frescos'];
-//add these arrays to arrayOfThings
 const arrayOfThings = [foods, activities, shopping, coffeeShops, bars];
 
+// DOM association:
 const container = document.querySelector("#container");
 
 const buttonContainer = document.createElement("div");
@@ -30,7 +28,8 @@ const resultContainer = document.querySelector("#resultContainer");
 const result = document.querySelector("#result");
 result.innerText = "According to our experts, your result is: ";
 
-// create buttons for new arrays
+const randomButtonContainer = document.querySelector("#randomButtonContainer");
+
 const randomButton = document.createElement("button");
 randomButton.classList.add("buttons");
 randomButton.setAttribute("id", "randomButton");
@@ -65,7 +64,7 @@ const resultContent = document.createElement("p");
 resultContent.classList.add('content');
 resultContent.innerText = placeholder;
 
-buttonContainer.appendChild(randomButton);
+randomButtonContainer.appendChild(randomButton);
 buttonContainer.appendChild(foodButton);
 buttonContainer.appendChild(activitiesButton);
 buttonContainer.appendChild(shoppingButton);
