@@ -26,6 +26,10 @@ const container = document.querySelector("#container");
 const buttonContainer = document.createElement("div");
 buttonContainer.classList.add("buttons");
 
+const resultContainer = document.querySelector("#resultContainer");
+const result = document.querySelector("#result");
+result.innerText = "According to our experts, your result is: ";
+
 // create buttons for new arrays
 const randomButton = document.createElement("button");
 randomButton.classList.add("buttons");
@@ -69,7 +73,7 @@ buttonContainer.appendChild(coffeeButton);
 buttonContainer.appendChild(barButton);
 //append new buttons
 container.appendChild(buttonContainer);
-container.appendChild(resultContent);
+resultContainer.appendChild(resultContent);
 
 
 const buttons = document.querySelectorAll("button");
