@@ -33,32 +33,32 @@ const randomButtonContainer = document.querySelector("#randomButtonContainer");
 const randomButton = document.createElement("button");
 randomButton.classList.add("buttons");
 randomButton.setAttribute("id", "randomButton");
-randomButton.textContent = "RANDOM CHOICE";
+randomButton.textContent = "Random";
 
 const foodButton = document.createElement("button");
 foodButton.classList.add("buttons");
 foodButton.setAttribute("id", "foodButton");
-foodButton.textContent = "FOODS";
+foodButton.textContent = "Eat Food";
 
 const activitiesButton = document.createElement("button");
 activitiesButton.classList.add("buttons");
 activitiesButton.setAttribute("id", "activitiesButton");
-activitiesButton.textContent = "ACTIVITIES";
+activitiesButton.textContent = "Do Something";
 
 const shoppingButton = document.createElement("button");
 shoppingButton.classList.add("buttons");
 shoppingButton.setAttribute("id", "shoppingButton");
-shoppingButton.textContent = "SHOPPING";
+shoppingButton.textContent = "Go Shopping";
 
 const coffeeButton = document.createElement("button");
 coffeeButton.classList.add("buttons");
 coffeeButton.setAttribute("id", "coffeeButton");
-coffeeButton.textContent = "COFFEE";
+coffeeButton.textContent = "Get Coffee";
 
 const barButton = document.createElement("button");
 barButton.classList.add("buttons");
 barButton.setAttribute("id", "barButton");
-barButton.textContent = "BARS";
+barButton.textContent = "Have a Drink";
 
 const resultContent = document.createElement("p");
 resultContent.classList.add('content');
