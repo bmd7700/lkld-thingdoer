@@ -7,9 +7,8 @@ const foods = ['Il Forno', 'Taco Bell', 'Jet\'s Pizza', 'Mellow Mushroom', 'Thai
     'Cob and Pen', 'Curry Mango', 'Culver\'s', 'Cafe Zuppina', 'Bedrock', 'The Joinery', 'Harry\'s', '1961', 'LoveBird', 'Chick-Fil-A', 'Ford\'s Garage', 
     'Olive Garden', 'Walk Ons', 'Michi Ramen', 'Oksumi Ramen', 'Frescos', 'Miller\'s Ale House', 'Smiths American Tavern', 'Mojo Federal', 'Texas Cattle Co.', 
     'Peach House', 'Mr. Fish', 'Scarpa\'s', 'Beef O\' Brady\'s', 'K-Pot Korean BBQ', 'Terrace Grill', 'PDQ', 'Tijuana Flats', 'Dona Julia\'s'];
-const parks = ['Bonnet Springs', 'Lake Parker Park', 'Lakeland Highlands Scrub', 'Barnett Park', 'Munn Park', 'Lake Mirror', 'Lake Morton', 'Circle Bar B', 
-    'Common Ground Park', 'Peterson Park', 'Lake Crago', 'Colt Creek State Park', 'Gator Creek Reserve', 'Hollis Garden'];
-const activities = ['Wander around downtown', 'Wander around Dixieland', 'Walk around Hollingsworth', 'Kitty Kat Lounge', 'Urban Air', 'SkyZone', 'Picassoz Cup', 
+const activities = ['Bonnet Springs', 'Lake Parker Park', 'Lakeland Highlands Scrub', 'Barnett Park', 'Munn Park', 'Lake Mirror', 'Lake Morton', 'Circle Bar B', 
+    'Common Ground Park', 'Peterson Park', 'Lake Crago', 'Colt Creek State Park', 'Gator Creek Reserve', 'Hollis Garden''Wander around downtown', 'Wander around Dixieland', 'Walk around Hollingsworth', 'Kitty Kat Lounge', 'Urban Air', 'SkyZone', 'Picassoz Cup', 
     'Painting with a Twist', 'Escape Room', 'Ax-Caliber', 'Shoot Straight Gun Range', 'Planet Fitness', 'Tienda Studio', 'Melting Spot'];
 const shopping = ['Amelia Page Boutique', 'Antique Mall', 'Lakeside Village', 'Pressed', 'Books a Million', 'Target', 'Lakeland Square Mall', 'Goodwill', 
     'Lighthouse Ministries', 'Brandon Mall', 'Tampa International Plaza', 'Scout and Tag', 'Inklings', 'Hobby Lobby', 'Michaels', 'Old Navy'];
@@ -20,7 +19,7 @@ const coffeeShops = ['Black and Brew', 'Mittchell\'s Coffee House', 'Hillcrest C
 const bars = ['Cob and Pen', 'Swan Brewing', 'The Joinery', 'Molly McHugh\'s', 'Dissent Brewing Co.', 'Revival', 'Vasco61', 'Lakeland Loft', 'Linksters', 
     'Ovation', 'Federal Bar', 'Smith\'s American Tavern', 'Frescos'];
 //add these arrays to arrayOfThings
-const arrayOfThings = [foods, parks, activities, shopping, coffeeShops, bars];
+const arrayOfThings = [foods, activities, shopping, coffeeShops, bars];
 
 const container = document.querySelector("#container");
 
@@ -37,11 +36,6 @@ const foodButton = document.createElement("button");
 foodButton.classList.add("buttons");
 foodButton.setAttribute("id", "foodButton");
 foodButton.textContent = "FOODS";
-
-const parksButton = document.createElement("button");
-parksButton.classList.add("buttons");
-parksButton.setAttribute("id", "parksButton");
-parksButton.textContent = "PARKS";
 
 const activitiesButton = document.createElement("button");
 activitiesButton.classList.add("buttons");
@@ -69,7 +63,6 @@ resultContent.innerText = placeholder;
 
 buttonContainer.appendChild(randomButton);
 buttonContainer.appendChild(foodButton);
-buttonContainer.appendChild(parksButton);
 buttonContainer.appendChild(activitiesButton);
 buttonContainer.appendChild(shoppingButton);
 buttonContainer.appendChild(coffeeButton);
@@ -108,11 +101,6 @@ function selectList(selection){
             length = foods.length;
             choice = randomNumber(length);
             result = foods[choice];
-            break;
-        case 'parksButton':
-            length = parks.length;
-            choice = randomNumber(length);
-            result = parks[choice];
             break;
         case 'activitiesButton':
             length = activities.length;
