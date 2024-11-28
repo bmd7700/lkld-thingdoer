@@ -3,6 +3,17 @@ title.innerText = "Lakeland Thing-Doer";
 
 let placeholder = ""; 
 
+//object testing:
+const myRestaurant = {
+    name: 'Bens Restaurant',
+    location: '123 Lakeland Drive',
+    cuisine: 'Pizza and beer',
+    cost: '$$',
+    website: '<a href="https://google.com">Bens Restaurant</a>'
+}
+
+const objectTester = [myRestaurant];
+
 const foods = ['Il Forno', 'Taco Bell', 'Jet\'s Pizza', 'Mellow Mushroom', 'Thai Oishi', 'Palace', 'Black and Brew', 
     'Cob and Pen', 'Curry Mango', 'Culver\'s', 'Cafe Zuppina', 'Bedrock', 'The Joinery', 'Harry\'s', '1961', 'LoveBird', 'Chick-Fil-A', 'Ford\'s Garage', 
     'Olive Garden', 'Walk Ons', 'Michi Ramen', 'Oksumi Ramen', 'Frescos', 'Miller\'s Ale House', 'Smiths American Tavern', 'Mojo Federal', 'Texas Cattle Co.', 
@@ -60,6 +71,11 @@ barButton.classList.add("buttons");
 barButton.setAttribute("id", "barButton");
 barButton.textContent = "Have a Drink";
 
+const testButton = document.createElement("button");
+testButton.classList.add("buttons");
+testButton.setAttribute("id", "testButton");
+testButton.textContent = "object test button";
+
 const resultContent = document.createElement("p");
 resultContent.classList.add('content');
 resultContent.innerText = placeholder;
@@ -70,6 +86,7 @@ buttonContainer.appendChild(activitiesButton);
 buttonContainer.appendChild(shoppingButton);
 buttonContainer.appendChild(coffeeButton);
 buttonContainer.appendChild(barButton);
+buttonContainer.appendChild(testButton);
 //append new buttons
 container.appendChild(buttonContainer);
 resultContainer.appendChild(resultContent);
@@ -124,6 +141,10 @@ function selectList(selection){
             length = bars.length;
             choice = randomNumber(length);
             result = bars[choice];
+        case 'testButton':
+            length = objectTester.length;
+            choice = randomNumber(length);
+            result = objectTester[choice];
     }
     return result;
 }
