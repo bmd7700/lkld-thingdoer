@@ -146,6 +146,8 @@ function selectList(selection){
             choice = randomNumber(length);
             result = objectTester[choice];
     }
+    // if type of result is object,
+    // iterate through object and take properties into html elements
     return result;
 }
 
