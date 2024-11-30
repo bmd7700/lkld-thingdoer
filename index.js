@@ -100,6 +100,8 @@ buttons.forEach((button) => {
         placeholder = selectList(selection);
         console.log('Placeholder: ' + placeholder);
         resultContent.innerText = placeholder.toString();
+        // need to replace the placeholder.toString with an innerHTML and have the function return an HTML list 
+        // resultContent.innerHTML = placeholder;
     })
 })
 
@@ -141,14 +143,17 @@ function selectList(selection){
             length = bars.length;
             choice = randomNumber(length);
             result = bars[choice];
+            break;
         case 'testButton':
             length = objectTester.length;
             choice = randomNumber(length);
             result = objectTester[choice];
+            //loop pver object and add html elements to result;
+            break;
     }
     // if type of result is object,
     // iterate through object and take properties into html elements
-    return result;
+    return result;   
 }
 
 function randomNumber(limit){
@@ -156,7 +161,15 @@ function randomNumber(limit){
 }
 
 
-
+/**
+ *         let data = ["Ram", "Shyam", "Sita", "Gita"];
+        let list = document.getElementById("myList");
+        for (i = 0; i < data.length; ++i) {
+            let li = document.createElement('li');
+            li.innerText = data[i];
+            list.appendChild(li);
+        }
+ */
 
 
 
